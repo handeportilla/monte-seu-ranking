@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="Shift_JIS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumblr Sorter</title>
+    <script>var __pbpa = true;</script>
+    <script>
+        var translated_warning_string = 'Warning: Never enter your Tumblr password unless "https://www.tumblr.com/login"\n' +
+            'is the address in your web browser.\n\n' +
+            'You should also see a green "Tumblr, Inc." identification in the address bar.\n\n' +
+            'Spammers and other bad guys use fake forms to steal passwords.\n\n' +
+            'Tumblr will never ask you to log in from a user’s blog.\n\n' +
+            'Are you absolutely sure you want to continue?';
+    </script>
+    <script type="text/javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=66ac555bc5745ebe20abdae7cbc40704"></script>
+    <link rel="shortcut icon" href="http://sv.tinypic.com?ref=qq68e9">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        #mainTable {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SORTER NAME</h1>
+    <p>Pick who you like better in each battle to get an accurate list of your favorite members.</p>
+    
+    <table id="mainTable">
+        <tr>
+            <td id="battleNumber" colspan="3"><b>Battle #1<br>0% sorted.</b></td>
+        </tr>
+        <tr>
+            <td id="leftField" onclick="sortList(-1);">Option 1</td>
+            <td class="middleField" onclick="sortList(0);">I like both</td>
+            <td id="rightField" onclick="sortList(1);">Option 2</td>
+        </tr>
+        <tr>
+            <td colspan="3" id="resultField"></td>
+        </tr>
+    </table>
+
+    <script>
+        function sortList(choice) {
+            console.log("User selected option: " + choice);
+        }
+    </script>
+</body>
+</html>
